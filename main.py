@@ -30,8 +30,24 @@ num = 3
 print("The factorial of", num, "is", factorial(num))
 
 # Create a function that returns a list,
+def countDown(n):
+    if n < 1:
+        return []
+    return [n] + countDown(n - 1)
+print("List: ", countDown(10))
 
 # tuple,
+def studentName(first, last):
+    tempTuple = (first[0], last[0])
+    return tempTuple
+
+tuple_1 = studentName([1], ["Aliya"])
+tuple_2 = studentName([2], ["Zhanerke"])
+tuple_3 = studentName([3], ["Almash"])
+tuple_4 = studentName([4], ["Ryskeldi"])
+tuple_5 = studentName([5], ["Samat"])
+
+print('Students: \n', tuple_1, '\n', tuple_2, '\n', tuple_3, '\n', tuple_4, '\n', tuple_5)
 
 # dictionary.
 
