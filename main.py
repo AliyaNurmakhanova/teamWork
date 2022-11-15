@@ -1,18 +1,28 @@
 # Creating a functional and
-a = 0
-def increment():
-    global a
-    a += 1
-
-increment()
-print(a)
+# z = 0
+# def increment():
+#     global z
+#     z += 1
+#
+# increment()
+# print(z)
 
 # non-functional function.
-def increment2(x):
-    return x + 1
-print(increment2(3))
+# def increment2(x):
+#     return x + 1
+# print(increment2(3))
 
 # An example of calling a function inside a function.
+def max2(a, b):
+    if a > b:
+        return a
+    return b
+print(max2(2, -3))
+
+def max3(a, b, c):
+    return max2(a, max2(b, c))
+
+print(max3(2, 7, -3))
 
 # Create a function that returns a list, tuple, dictionary.
 
