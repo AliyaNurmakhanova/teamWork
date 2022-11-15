@@ -34,6 +34,7 @@ def countDown(n):
     if n < 1:
         return []
     return [n] + countDown(n - 1)
+
 print("List: ", countDown(10))
 
 # tuple,
@@ -60,6 +61,7 @@ def filterList(f):
 
 originalList = [1, 12, 4, 55, 2, 30]
 filteringList = list(filter(filterList, originalList))
+
 print("Filtering list: ", filteringList)
 
 # and Reduce functions.
