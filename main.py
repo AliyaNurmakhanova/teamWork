@@ -1,4 +1,4 @@
-# Creating a functional and
+# Creating a non-functional and
 z = 0
 def increment():
     global z
@@ -7,7 +7,7 @@ def increment():
 increment()
 print(z)
 
-# non-functional function.
+# functional function.
 def max2(a, b):
     if a > b:
         return a
