@@ -39,5 +39,10 @@ print("The factorial of", num, "is", factorial(num))
 # Give an example of using the Map,
 
 # Filter,
+def filterList(f):
+    return f > 10
 
+originalList = [1, 12, 4, 55, 2, 30]
+filteringList = list(filter(filterList, originalList))
+print("Filtering list: ", filteringList)
 # and Reduce functions.
