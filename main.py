@@ -45,4 +45,5 @@ def filterList(f):
 originalList = [1, 12, 4, 55, 2, 30]
 filteringList = list(filter(filterList, originalList))
 print("Filtering list: ", filteringList)
+
 # and Reduce functions.
