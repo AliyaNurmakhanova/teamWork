@@ -1,16 +1,16 @@
 # Creating a functional and
-# z = 0
-# def increment():
-#     global z
-#     z += 1
-#
-# increment()
-# print(z)
+z = 0
+def increment():
+    global z
+    z += 1
+
+increment()
+print(z)
 
 # non-functional function.
-# def increment2(x):
-#     return x + 1
-# print(increment2(3))
+def increment2(x):
+    return x + 1
+print(increment2(3))
 
 # An example of calling a function inside a function.
 def max2(a, b):
