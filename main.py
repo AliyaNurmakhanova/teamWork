@@ -4,6 +4,7 @@
 # Функцияның ішінде функция шақыруға мысал
 # Нәтижесінде тізім, кортеж, сөздік қайтаратын функция жазу
 # Map, Filter и Reduce функцияларын қолданып мысал келтіреміз. Айырмашылықтарын анықтаймыз.
+from functools import reduce
 
 #Akimzhan Zhanerke
 objects = []
@@ -19,8 +20,12 @@ def objects_show(obj):
 objects_add(objects)
 objects_show(objects)
 
+def reduce_func(el_prev, el):
+    return el_prev+el
+
 def GPA(obj):
     mapped=list(map(lambda x:x/3,objects))
-    print(mapped)
+    summa = reduce(reduce_func,mapped)
+    print(summa)
 
 GPA(objects)
