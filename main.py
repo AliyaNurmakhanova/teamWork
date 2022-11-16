@@ -5,6 +5,7 @@
 # Нәтижесінде тізім, кортеж, сөздік қайтаратын функция жазу
 # Map, Filter и Reduce функцияларын қолданып мысал келтіреміз. Айырмашылықтарын анықтаймыз.
 
+#Akimzhan Zhanerke
 objects = []
 def objects_add(obj):
     for i in range(10):
