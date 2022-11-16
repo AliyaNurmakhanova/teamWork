@@ -10,7 +10,7 @@ from functools import reduce
 objects = []
 def objects_add(obj):
     for i in range(4):
-        objects.append(int(input()))
+        objects.append(float(input()))
         # if objects[i] == ' ':
         #     break
 
@@ -24,8 +24,10 @@ def reduce_func(el_prev, el):
     return el_prev+el
 
 def GPA(obj):
-    mapped=list(map(lambda x:x/3,objects))
+    mapped=list(map(lambda x:x*3,objects))
+    print(mapped)
     summa = reduce(reduce_func,mapped)
-    print(summa)
+    #summa_grades = reduce(reduce_func,objects)
+    print(summa/12)
 
 GPA(objects)
