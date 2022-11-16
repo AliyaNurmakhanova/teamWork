@@ -8,10 +8,10 @@
 #Akimzhan Zhanerke
 objects = []
 def objects_add(obj):
-    for i in range(10):
-        objects.append(input())
-        if objects[i] == ' ':
-            break
+    for i in range(4):
+        objects.append(int(input()))
+        # if objects[i] == ' ':
+        #     break
 
 def objects_show(obj):
     print(objects)
