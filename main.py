@@ -18,3 +18,9 @@ def objects_show(obj):
 
 objects_add(objects)
 objects_show(objects)
+
+def GPA(obj):
+    mapped=list(map(lambda x:x/3,objects))
+    print(mapped)
+
+GPA(objects)
