@@ -18,16 +18,40 @@ def objects_show(obj):
     print(objects)
 
 objects_add(objects)
-objects_show(objects)
+# objects_show(objects)
 
+#Yntymak Ryskeldi
 def reduce_func(el_prev, el):
     return el_prev+el
 
+#Yerzhanova Almash
 def GPA(obj):
     mapped=list(map(lambda x:x*3,objects))
-    print(mapped)
-    summa = reduce(reduce_func,mapped)
+    #print(mapped)
+    summa = reduce(reduce_func,mapped) #Yntymak Ryskeldi
     #summa_grades = reduce(reduce_func,objects)
-    print(summa/12)
+    print('GPA:', summa/12)
 
 GPA(objects)
+
+# Nurmakhanova Aliya
+def dateInputs():
+    date_entry = ()
+    while True:
+        date = input("Введите дату поступления в университет : ")
+        if not date:
+            break
+        date_entry = date_entry + (date,)
+    return date_entry
+
+def specialityInputs():
+    specialities = ()
+    while True:
+        speciality = input("Введите специальность : ")
+        if not speciality:
+            break
+        specialities = specialities + (speciality,)
+    return specialities
+
+print(dateInputs())
+print(specialityInputs())
