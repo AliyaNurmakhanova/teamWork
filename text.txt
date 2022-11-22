@@ -1,0 +1,9 @@
+Python, one of the most popular programming languages in the world,
+has created everything from Netflix s recommendation algorithm to the software that controls self-driving cars.
+Python is a general-purpose language, which means it s designed to be used in a range of applications,
+including data science, software and web development, automation, and generally getting stuff done.
+Python is a computer programming language often used to build websites and software, automate tasks,
+and conduct data analysis. Python is a general-purpose language,
+meaning it can be used to create a variety of different programs and isn t specialized for any specific problems.
+This versatility, along with its beginner-friendliness, has made it one of the most-used programming languages today.
+A survey conducted by industry analyst firm RedMonk found that it was the second-most popular programming language among developers in 2021.
