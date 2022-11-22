@@ -11,6 +11,12 @@ objects = []
 def objects_add(obj):
     for i in range(4):
         objects.append(int(input()))
+
+# Akimzhan Zhanerke
+objects = []
+def objects_add(obj):
+    for i in range(4):
+        objects.append(float(input()))
         # if objects[i] == ' ':
         #     break
 
@@ -27,6 +33,18 @@ def GPA(obj):
     mapped = list(map(lambda x: x/3, objects))
     summa = reduce(reduce_func, mapped)
     print(summa)
+
+# objects_show(objects)
+
+# Yntymak Ryskeldi
+def reduce_func(el_prev, el):
+    return el_prev+el
+
+# Yerzhanova Almash
+def GPA(obj):
+    mapped = list(map(lambda x: x*3, objects))
+    summa = reduce(reduce_func, mapped) # Yntymak Ryskeldi
+    print('GPA:', summa/12)
 
 GPA(objects)
 
@@ -51,5 +69,3 @@ def specialityInputs():
 
 print(dateInputs())
 print(specialityInputs())
-
-
