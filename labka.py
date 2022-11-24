@@ -31,7 +31,7 @@ print(bin(lst[1]))
 print(hex(lst[1]))
 print(oct(lst[1]))
 
-print(list(enumerate(lst)))
+print(list(enumerate(lst,1)))
 print(max(list(enumerate(lst))))
 
 file1.close()
